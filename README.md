@@ -1,4 +1,3 @@
-# graphlib
-library with graph.
-Know it's not so useful but making this for a bit convenient graph.
-Will be C++ library.
+# graphlib - Graph Data Structure
+**Graph Data Structure Class** for **C++**
+This is also my experimental project
