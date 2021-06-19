@@ -1,3 +1,3 @@
 # graphlib - Graph Data Structure
-**Graph Data Structure Class** for **C++**
-<br>This is also my experimental project
+**Graph Data Structure Class** for **C++**,
+<br>and this is also my experimental project.
