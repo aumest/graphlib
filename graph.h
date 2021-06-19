@@ -1,5 +1,5 @@
 /*
-* A C++ Graph Library by devzhxpr
+* C++ Graph Library by devzhxpr
 */
 #include <vector>
 #include <map>
@@ -50,8 +50,21 @@ public:
 	graph() {
 
 	}
-	void create_vertex(_Ty _value) {
-
+	int create_vertex(_Ty _value) {
+		for (int i = 0; ; i++) {
+			if (!_vertexes.count(i)) {
+				_vertexes[i].value = _value;
+				return i;
+			}
+		}		
+	}
+	int create_vertex(_Ty _value, bool (*_Condition)(int)) {
+		for (int i = 0; ; i++) {
+			if (!_vertexes.count(i) && _Condition(i)) {
+				_vertexes[i].value = _value;
+				return i;
+			}
+		}		
 	}
 	void create_vertex(int _vertexIdx, _Ty _value) {
 		if (_vertexes.find(_vertexIdx) == _vertexes.end()) {
